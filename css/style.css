@@ -1,0 +1,218 @@
+:root {
+  --primary: #bd7d06;
+  --bg: #03e7dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.body {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: var(--bg);
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+.navbar .navbar-nav {
+  opacity: 0;
+}
+.navbar .navbar-extra {
+  opacity: 0;
+}
+/* navbar end */
+/* selamat datang */
+
+.selamat-datang .content {
+  min-height: 100vh;
+  display: inline;
+  align-items: center;
+}
+.selamat-datang .content h1 {
+  color: darkblue;
+  font-size: 2.5rem;
+  padding-top: 8rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
+}
+.selamat-datang .content p {
+  color: black;
+  font-size: 1.7rem;
+  margin: 1rem 7%;
+  line-height: 2rem;
+}
+.selamat-datang .content h2 {
+  font-size: 2rem;
+  color: darkblue;
+  text-align: center;
+}
+.selamat-datang .content .cta {
+  font-size: 2rem;
+  color: #bd7d06;
+  margin: 1.7rem 40%;
+}
+.selamat-datang .content .cta:hover {
+  color: #03e7dc;
+}
+/* Hero end */
+/* about start */
+.pertanyaan-satu {
+  min-height: 100vh;
+  margin-top: 30rem;
+}
+.pertanyaan-satu h2 {
+  padding: 7rem 7% 1.4rem;
+  font-size: 2.7rem;
+  color: #664303;
+  text-align: center;
+}
+.pertanyaan-satu .content h3 {
+  font-size: 3rem;
+  padding: 3rem;
+  margin-bottom: 7rem;
+  color: #013a37;
+  text-align: center;
+}
+.pertanyaan-satu .content p {
+  font-size: 2rem;
+  font-style: italic;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  color: #a34d07;
+  text-align: center;
+}
+
+.pertanyaan-satu a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #a34d07;
+  font-size: 3rem;
+}
+.pertanyaan-satu a:hover {
+  color: rgb(5, 129, 129);
+}
+/* jawaban satu */
+.jawaban-satu {
+  min-height: 50vh;
+}
+.jawaban-satu .container {
+  display: block;
+  text-align: center;
+  padding-top: 20rem;
+}
+.jawaban-satu .container a {
+  color: #041564;
+  font-size: 5rem;
+  padding: 2rem;
+}
+.jawaban-satu .container a:hover {
+  color: #a34d07;
+}
+
+/* jawaban dua */
+.jawaban-dua {
+  min-height: 100vh;
+  font-size: 3rem;
+}
+.jawaban-dua .container {
+  display: block;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.jawaban-dua .container a {
+  color: #041564;
+  font-size: 5rem;
+  padding: 2rem;
+}
+.jawaban-dua .container a:hover {
+  opacity: 0;
+  cursor: default;
+}
+
+/* jawaban tiga */
+.jawaban-tiga {
+  min-height: 100vh;
+}
+.jawaban-tiga h2 {
+  font-size: 3rem;
+  color: #013a37;
+  text-align: center;
+  padding: 9rem 7%;
+  padding-bottom: 1rem;
+}
+.jawaban-tiga p {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #6d5002;
+  text-align: center;
+  padding: 1rem 7%;
+  padding-bottom: 0.5rem;
+}
+.jawaban-tiga h3 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #16026d;
+  text-align: center;
+  padding: 1rem 7%;
+  padding-bottom: 0.2rem;
+}
+.jawaban-tiga .container a {
+  display: block;
+  text-align: center;
+  padding-top: 0.2rem;
+  padding-bottom: 2rem;
+  color: #041564;
+  font-size: 2rem;
+}
+.jawaban-tiga .container a:hover {
+  color: #664303;
+}
+.jawaban-tiga .row .jawaban-tiga-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 27%;
+}
+
+/* about end */
+
+/* media queries */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+}
